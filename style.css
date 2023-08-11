@@ -1,0 +1,435 @@
+/*Body */
+body.light-mode {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  transition: background-color 0.5s ease;
+  color: #000; /* Text color for light mode */
+}
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.5s ease;
+}
+body{
+  transition: background-color 0.5s ease;
+  margin: 0 auto; /* Center align the body */
+  padding: 10px;
+  border: solid 3px #8b8b8b;
+  border-radius: 10px;
+}
+@media screen and (min-width: 769px) {
+  body {
+      max-width: 768px; /* Limit body width to 768px */  
+  } 
+}
+
+/*Navigation bar */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #2b2828; /* Set the background color */
+  padding: 15px;
+}
+
+nav ul li {
+  display: inline-block; /* Display the list items in a row */
+  margin-right: 20px; /* Add some space between the list items */
+  text-align: center;
+}
+
+nav ul li a {
+  color: #fff; /* Set the text color to white */
+  text-decoration: none; /* Remove underline from links */
+  padding: 10px 20px; /* Add some padding to the links */
+  border-radius: 5px; /* Add rounded corners to the links */
+}
+@media screen and (max-width: 768px) {
+  nav ul li a {
+      padding: 10px 0; /* Apply padding 0 for mobile view */
+  }
+}
+
+nav ul li a:hover {
+  background-color: #555; /* Change the background color on hover */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+
+
+/* Cover Area */ 
+.page_cover{
+  display: flex;
+  margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .page_cover {
+      display: block; /* Remove flex layout for mobile view */
+  }
+  .profile_pic {
+      margin: 0 auto; /* Center the image */
+  }
+}
+@media screen and (min-width: 769px) {
+  .profile_pic{
+    margin-right: 50px;
+    margin-left: 20px;
+  } 
+}
+
+.profile_pic{
+  background-color: #555;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+}
+.profile_pic img{
+  width: 150px;
+  height: 150px;
+  margin: 25px 25px 25px 25px;
+  border-radius: 50%;
+}
+.about_me{
+  text-align: center;
+}
+.about_me h1{
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+.about_me h2{
+  font-family:"Times New Roman", Times, serif;
+  margin-bottom: 0;
+  
+}
+/* .about_me ul{
+  display: flex;
+  text-align: center;
+}
+.about_me ul li{
+  margin-left: 20px;
+} */
+
+.about_me p{
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+/* Education Area */
+.education{
+  margin-left: 2px;
+}
+
+.light-mode.education{
+  background-color: #f7f6f6;
+}
+.dark-mode.education{
+  background-color: #363738;
+}
+
+.education h1{
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+.education h4{
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.education hr{
+  color: aqua;
+  border: solid 2px;
+}
+.education_data{
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.light-mode.education_data{
+  background-color: #f7f1f1;
+}
+.dark-mode .education_data{
+  background-color: #353636; 
+}
+
+.edu_img{
+  width: 80px;
+  height: 80px;
+}
+.education img{
+  width: 80px;
+
+  border-radius: 10%;
+}
+.education_details{
+  margin-left: 20px;
+}
+.education_details h2{
+  margin-bottom: 0;
+}
+.education_details p{
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+/* Skills Area */
+.tec_skills{
+  margin-left: 2px;
+}
+.light-mode .tec_skills{
+  background-color: #f7f6f6;
+}
+.dark-mode .tec_skills{
+  background-color: #363738;
+}
+.tec_skills h1{
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+.tec_skills h2{
+  margin-top: 10px;
+  margin-bottom: 2px;
+  margin-left: 20px;
+}
+.tec_skills hr{
+  color: aqua;
+  border: solid 2px;
+}
+.tec_skills_data{
+  margin-bottom: 20px;
+  margin-left: 10px;
+  display: flex;
+}
+.tec_skills_data_row{
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .tec_skills_data {
+      display: block; /* Remove flex layout for mobile view */
+  }
+}
+
+
+.light-mode .tec_skills_data{
+  background-color: #f7f1f1;
+}
+.dark-mode .tec_skills_data{
+  background-color: #353636;
+}
+.tec_skills_data h2{
+  margin-bottom: 0;
+}
+.tec_skills_data img{
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 10%;
+  text-align: center;
+}
+.tec_skills_data img:hover{
+  width: 60px;
+  height: 60px;
+  margin: 0px;
+}
+
+.tec_skills_data h4{
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+.tec_skill_unit{
+  /* background-color: yellow; */
+  margin-left: 5px;
+  align-items: center;
+  padding: 10px;
+}
+
+
+
+/* Contact and Social Media Area */
+.contact_social {
+  margin-top: 50px;
+}
+.light-mode .contact_social{
+  background-color: #f7f6f6;
+}
+.dark-mode .contact_social{
+  background-color: #363738;
+}
+
+.contact_social a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact_row,
+.social_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.light-mode .contact_row, .light-mode .social_row{
+  background-color: #f7f6f6;
+}
+.dark-mode .contact_row, .dark-mode .social_row{
+  background-color: #353636;
+}
+
+/* Contact Details */
+.contact_social h1{
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+.contact_social hr{
+  color: aqua;
+  border: solid 2px;
+}
+.contact_details{
+  margin: auto;
+}
+.contact_details ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .contact_details ul{
+      display: block; /* Remove flex layout for mobile view */
+  }
+  
+}
+
+.contact_details li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.contact_details i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Social Media Icons */
+.social_media{
+  display: flex;
+  margin: auto;
+}
+
+.social_container {
+  
+  text-decoration: none;
+  margin-left: 30px;
+  text-align: center;
+  width: 60px;
+  padding: 10px;
+  font-size: 35px;
+}
+@media screen and (max-width: 768px) {
+  .social_container {
+      margin-left: 3px;
+  }
+}
+
+.light-mode .social_container{
+  background-color: #f7f6f6;
+  color: #333;
+}
+.dark-mode .social_container{
+  background-color: #353636;
+  color: #fff;
+}
+.social_icon i {
+  background-color: inherit;
+}
+
+.social_name {
+  font-size: 14px;
+  margin-top: 2px;
+}
+.social_name h4{
+  margin-top: 2px;
+}
+
+/* Additional styling for social media icons on hover */
+.social_container:hover {
+  color: #007bff; /* Change color on hover */
+  transition: color 0.3s ease; /* Add transition for hover effects */
+}
+
+/* Footer */
+/* Footer Styles */
+.site_footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer_content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site_footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Adjustments for responsive design */
+@media screen and (max-width: 768px) {
+  .site_footer {
+    padding: 15px 0;
+  }
+  
+  .footer_content {
+    padding: 0 20px;
+  }
+}
+
+.dark_mode_switch {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000; /* Make sure it's above other content */
+}
+.dark_mode_switch .container {
+  text-align: center;
+}
+
+.dark_mode_switch .toggle-button {
+  background-color: #000000;
+  color: #f0f002;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.dark_mode_switch i{
+  font-size: 1.1rem;
+}
+
+/* Go to Top Button */
+.go-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+.go-to-top-button:hover {
+  background-color: #0056b3;
+}
