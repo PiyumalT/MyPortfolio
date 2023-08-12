@@ -132,6 +132,7 @@ nav ul li a:hover {
   height: 150px;
   margin: 25px 25px 25px 25px;
   border-radius: 50%;
+  transition: width 0.3s, height 0.3s, margin 0.3s;
 }
 .profile_pic img:hover{
   width: 190px;
@@ -305,11 +306,13 @@ nav ul li a:hover {
   margin: 5px;
   border-radius: 10%;
   text-align: center;
+  transition: width 0.3s, height 0.3s, margin 0.3s;
 }
 .tec_skills_data img:hover{
   width: 60px;
   height: 60px;
   margin: 0px;
+  animation: ease-in-out;
 }
 
 .tec_skills_data h4{
@@ -322,6 +325,96 @@ nav ul li a:hover {
   margin-left: 5px;
   align-items: center;
   padding: 10px;
+}
+
+
+/* Work Experience Area */
+.work_experience {
+  margin-left: 2px;
+}
+
+.light-mode .work_experience {
+  background-color: #f7f6f6;
+}
+
+.dark-mode .work_experience {
+  background-color: #363738;
+}
+
+.work_experience h1 {
+  margin-top: 50px;
+  margin-bottom: 0;
+  display: flex;
+}
+
+.work_experience h4 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.work_experience hr {
+  color: aqua;
+  border: solid 2px;
+}
+
+.work_data {
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.light-mode .work_data {
+  background-color: #f7f1f1;
+}
+
+.dark-mode .work_data {
+  background-color: #353636;
+}
+
+.work_img {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  padding-top: 10px;
+}
+.work_img i {
+  font-size: 4rem; /* Adjust the size as needed */
+  color: #000000; /* Set the color for the icon */
+  /* Additional styles as needed */
+}
+
+.work_experience img {
+  width: 80px;
+  border-radius: 10%;
+}
+
+.work_details {
+  margin-left: 20px;
+}
+
+.work_details h2 {
+  margin-bottom: 0;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .work_details h2,
+  .tec_skills h2,
+  .education h2,
+  .contact_social h2 {
+      font-size: 1.2rem;
+  }
+
+  .tec_skills h1,
+  .education h1,
+  .contact_social h1 {
+      font-size: 1.7rem;
+  }
+}
+
+.work_details p {
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 
