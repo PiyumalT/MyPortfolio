@@ -585,9 +585,10 @@ nav ul li a:hover {
   background-color: #000000;
   color: #f0f002;
   border: none;
-  padding: 5px;
+  padding: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border-radius: 10%;
 }
 .dark_mode_switch i{
   font-size: 1.1rem;

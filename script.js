@@ -95,4 +95,21 @@ function clearText() {
 
 addLetter();
 
+
+
+// Get the button
+let prevScrollPos = window.pageYOffset;
+
+window.addEventListener("scroll", () => {
+    const currentScrollPos = window.pageYOffset;
+
+    if (prevScrollPos > currentScrollPos) {
+        darkModeButton.style.display = "block"; // Show button when scrolling up
+    } else {
+        darkModeButton.style.display = "none"; // Hide button when scrolling down
+    }
+
+    prevScrollPos = currentScrollPos;
+});
+
   
