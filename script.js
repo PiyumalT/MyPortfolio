@@ -71,4 +71,28 @@ document.querySelectorAll('.nav-links li a').forEach(function(link) {
     });
 });
 
+
+
+const textContainer = document.getElementById("animatedText");
+const text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tenetur sint laudantium ad facere a doloremque fugiat hic odit nihil, est officiis provident deleniti error impedit distinctio, dolor unde commodi.";
+let index = 0;
+
+function addLetter() {
+    if (index < text.length) {
+        textContainer.textContent += text[index];
+        index++;
+        setTimeout(addLetter, 50); // Adjust the delay here
+    } else {
+        setTimeout(clearText, 1000); // Wait 1 second and then clear text
+    }
+}
+
+function clearText() {
+    textContainer.textContent = "";
+    index = 0;
+    setTimeout(addLetter, 1000); // Wait 1 second and then start typing again
+}
+
+addLetter();
+
   
