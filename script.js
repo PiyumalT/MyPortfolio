@@ -51,5 +51,24 @@ function show_hide_list(event) {
     }    
 }
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+document.querySelector('.mobile-menu').addEventListener('click', function () {
+    document.querySelector('.nav-links').classList.toggle('active');
+});
+// Close the navigation menu when a link is clicked
+document.querySelectorAll('.nav-links li a').forEach(function(link) {
+    link.addEventListener('click', function() {
+        document.querySelector('.nav-links').classList.remove('active');
+    });
+});
 
   

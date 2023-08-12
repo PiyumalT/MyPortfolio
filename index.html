@@ -10,12 +10,20 @@
 </head>
 <body class="light-mode">
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="contact.html">Contact</a></li>
+        <div class="mobile-menu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#tec_skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+    
     <div class="page_cover">
         <div class="profile_pic">
             <img src="profile_img.png" alt="Profile Image">
@@ -31,7 +39,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tenetur sint laudantium ad facere a doloremque fugiat hic odit nihil, est officiis provident deleniti error impedit distinctio, dolor unde commodi.</p>
         </div>
     </div>
-    <div class="education">
+    <div class="education" id="education">
         <h1 onclick="show_hide_list(event)">Education &nbsp;&nbsp;&nbsp;<div class="expand_icon"><i class="fas fa-caret-up"></i></div></h1>
         <hr>
         <div class="data_set" style="display: block;">
@@ -59,7 +67,7 @@
         </div>
     </div>
 
-    <div class="tec_skills">
+    <div class="tec_skills" id="tec_skills">
         <h1 onclick="show_hide_list(event)">Technical Skills &nbsp;&nbsp;&nbsp; <div class="expand_icon"><i class="fas fa-caret-up"></i></div></h1>
         <hr>
         <div class="data_set" style="display: block;">
@@ -210,7 +218,7 @@
     </div>
  
 
-    <div class="contact_social">
+    <div class="contact_social" id="contact">
         <h1 onclick="show_hide_list(event)">Contact / Find me &nbsp;&nbsp;&nbsp;<div class="expand_icon"><i class="fas fa-caret-up"></i></div></h1>
         <hr>
         <div class="data_set" style="display: block;">    

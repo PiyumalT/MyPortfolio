@@ -6,6 +6,7 @@ body.light-mode {
   color: #000; /* Text color for light mode */
 }
 body.dark-mode {
+  font-family: Arial, sans-serif;
   background-color: #333;
   color: #fff;
   transition: background-color 0.5s ease;
@@ -23,7 +24,7 @@ body{
   } 
 }
 
-/*Navigation bar */
+/* Navigation bar */
 ul {
   list-style: none;
   margin: 0;
@@ -31,32 +32,71 @@ ul {
 }
 
 nav {
-  background-color: #2b2828; /* Set the background color */
+  background-color: #2b2828;
   padding: 15px;
+  display: flex;
+  justify-content: space-between; /* Align the mobile menu icon to the right */
+  align-items: center;
+}
+
+.nav-links {
+  display: flex; /* Display the navigation links in a row */
 }
 
 nav ul li {
-  display: inline-block; /* Display the list items in a row */
-  margin-right: 20px; /* Add some space between the list items */
+  margin-right: 20px;
   text-align: center;
 }
 
 nav ul li a {
-  color: #fff; /* Set the text color to white */
-  text-decoration: none; /* Remove underline from links */
-  padding: 10px 20px; /* Add some padding to the links */
-  border-radius: 5px; /* Add rounded corners to the links */
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
-@media screen and (max-width: 768px) {
-  nav ul li a {
-      padding: 10px 0; /* Apply padding 0 for mobile view */
-  }
-}
-
 nav ul li a:hover {
   background-color: #555; /* Change the background color on hover */
   transition: background-color 0.3s ease; /* Add a smooth transition effect */
 }
+
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+      display: none; /* Hide the navigation links in mobile view */
+      flex-direction: column; /* Stack the links vertically */
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      background-color: #2b2828;
+  }
+
+  .nav-links.active {
+      display: flex; /* Show the navigation links when active */
+      width: 70vw;
+      margin: 13px;
+
+  }
+
+  .nav-links li {
+      text-align: center;
+      padding: 10px 0; /* Apply padding vertically */
+      border-bottom: #000;
+  }
+
+  .icon-bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      background-color: #fff;
+  }
+}
+
+
+/* html {
+  scroll-behavior: smooth;
+} */
 
 
 
@@ -466,7 +506,7 @@ nav ul li a:hover {
   border: none;
   padding: 10px;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 40%;
   z-index: 1000;
 }
 
