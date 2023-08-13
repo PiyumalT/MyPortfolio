@@ -23,6 +23,12 @@ body{
       max-width: 768px; /* Limit body width to 768px */  
   } 
 }
+@media screen and (max-width: 768px) {
+  .body {
+    padding:0;
+  }
+
+}
 
 /* Navigation bar */
 ul {
@@ -166,13 +172,6 @@ nav ul li a:hover {
 .about_me p {
   opacity: 1;
 }
-/* .about_me ul{
-  display: flex;
-  text-align: center;
-}
-.about_me ul li{
-  margin-left: 20px;
-} */
 
 .about_me p{
   margin-top: 0;
@@ -182,11 +181,9 @@ nav ul li a:hover {
   display: block;
   overflow: hidden;
   max-height:1000px ;
-  /* transition:0 max-height 0.3s ease; */
-  
-  /* transition:0 max-height 0.3s ease; */
-  /* transition: height 4s; */
 }
+
+
 
 /* Education Area */
 .education{
@@ -291,7 +288,9 @@ nav ul li a:hover {
 @media screen and (max-width: 768px) {
   .tec_skills_data {
       display: block; /* Remove flex layout for mobile view */
+      margin-left: 0px;
   }
+
 }
 
 
@@ -607,7 +606,69 @@ nav ul li a:hover {
   border-radius: 40%;
   z-index: 1000;
 }
+.Send_msg_btn2 {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 40%;
+  z-index: 1000;
+}
 
-.go-to-top-button:hover {
+.go-to-top-button:hover ,.Send_msg_btn2:hover{
   background-color: #0056b3;
+}
+
+
+
+/* Style the modal */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin:auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: right;
+  max-height: 99vh;
+}
+.modal-content .close{
+  font-size: 30px;
+  background-color: #007bff;
+  text-align: right;
+  border-radius: 50%;
+  border-radius: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.modal-content .close:hover{
+  background-color: #0056b3;
+  transition: background-color 0.3s ease;
+}
+.contact_form_btn{
+  text-align: center;
+}
+#openModal{
+  font-size: 1.1rem;
+  width: auto;
+  padding: 6px;
+  border-block-color: aqua;
+  border-width: 3px;
+  border-color: aqua;
 }
