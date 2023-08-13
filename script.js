@@ -135,4 +135,19 @@ function openModal() {
     modalOverlay.style.display = "block";
 }
 
+
+const mobileMenu = document.querySelector(".mobile-menu");
+const navLinks = document.querySelector(".nav-links");
+
+mobileMenu.addEventListener("click", () => {
+    if (navLinks.classList.contains("slide-out")) {
+        navLinks.classList.remove("slide-out");
+        navLinks.classList.add("slide-in");
+    } else {
+        navLinks.classList.remove("slide-in");
+        navLinks.classList.add("slide-out");
+    }
+});
+
+
   

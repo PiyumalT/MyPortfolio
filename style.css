@@ -65,6 +65,33 @@ nav ul li a:hover {
   transition: background-color 0.3s ease; /* Add a smooth transition effect */
 }
 
+@keyframes slideIn {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+.slide-in {
+  animation: slideOut 0.5s forwards;
+  
+}
+
+.slide-out {
+  animation: slideIn 0.5s forwards;
+}
+
 
 @media screen and (max-width: 768px) {
   .nav-links {
