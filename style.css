@@ -175,11 +175,11 @@ nav ul li a:hover {
 
 }
 .profile_pic img{
-  width: 150px;
-  height: 150px;
-  margin: 25px 25px 25px 25px;
-  border-radius: 50%;
   transition: width 0.3s, height 0.3s, margin 0.3s;
+  width: 190px;
+  height: 190px;
+  margin: 5px;
+  border-radius: 50%;
 }
 .profile_pic img:hover{
   width: 190px;
@@ -208,10 +208,14 @@ nav ul li a:hover {
 .about_me h2{
   font-family:"Times New Roman", Times, serif;
   margin-bottom: 0;
+  margin-top: 3px;
   
 }
 .about_me p {
+  text-align: left;
   opacity: 1;
+  font-style: italic;
+  padding: 5px;
 }
 
 .about_me p{
@@ -622,6 +626,10 @@ nav ul li a:hover {
 .site_footer p {
   margin: 0;
   font-size: 14px;
+}
+.site_footer a {
+  color: #07f3fb;
+  text-decoration: none;
 }
 
 /* Adjustments for responsive design */

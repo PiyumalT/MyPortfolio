@@ -1,3 +1,4 @@
+// Dark mode , light mode and theme button
 const darkModeButton = document.getElementById('darkModeButton');
 const body = document.body;
 
@@ -12,7 +13,7 @@ darkModeButton.addEventListener('click', () => {
 });
 
 
-
+// Scroll to top button
 function scrollToTop() {
     window.scrollTo({
         top: 0,
@@ -20,13 +21,13 @@ function scrollToTop() {
     });
 }
 
+// show hide data set
 function show_hide_list(event) {
     const parentSection = event.currentTarget.parentElement;
     var data_set = parentSection.querySelector(".data_set");
     var expand_icon = parentSection.querySelector(".expand_icon");
     
     if (data_set.style.maxHeight === "0px") {
-        // data_set.style.maxHeight = "1000px"; // Set max-height to your desired value
         expand_icon.innerHTML = '<i class="fas fa-caret-up"></i>';
 
         for (var i = 0; i <= 30; i++) {
@@ -51,6 +52,7 @@ function show_hide_list(event) {
     }    
 }
 
+// Navigation make smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -61,9 +63,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Open the navigation menu when the hamburger icon is clicked
 document.querySelector('.mobile-menu').addEventListener('click', function () {
     document.querySelector('.nav-links').classList.toggle('active');
 });
+
 // Close the navigation menu when a link is clicked
 document.querySelectorAll('.nav-links li a').forEach(function(link) {
     link.addEventListener('click', function() {
@@ -71,26 +75,39 @@ document.querySelectorAll('.nav-links li a').forEach(function(link) {
     });
 });
 
+//animation for mobile menu
+const mobileMenu = document.querySelector(".mobile-menu");
+const navLinks = document.querySelector(".nav-links");
 
+mobileMenu.addEventListener("click", () => {
+    if (navLinks.classList.contains("slide-out")) {
+        navLinks.classList.remove("slide-out");
+        navLinks.classList.add("slide-in");
+    } else {
+        navLinks.classList.remove("slide-in");
+        navLinks.classList.add("slide-out");
+    }
+});
 
+//about me text animation
 const textContainer = document.getElementById("animatedText");
-const text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tenetur sint laudantium ad facere a doloremque fugiat hic odit nihil, est officiis provident deleniti error impedit distinctio, dolor unde commodi.";
+const text = "I'm currently an undergraduate student with a knack for full-stack development. I enjoy bridging the gap between front-end and back-end realms, crafting holistic digital solutions that marry user experience with technical functionality.";
 let index = 0;
 
 function addLetter() {
     if (index < text.length) {
         textContainer.textContent += text[index];
         index++;
-        setTimeout(addLetter, 50); // Adjust the delay here
+        setTimeout(addLetter, 30); // Adjust the delay here
     } else {
-        setTimeout(clearText, 1000); // Wait 1 second and then clear text
+        setTimeout(clearText, 2000); // Wait 2 second and then clear text
     }
 }
 
 function clearText() {
     textContainer.textContent = "";
     index = 0;
-    setTimeout(addLetter, 1000); // Wait 1 second and then start typing again
+    setTimeout(addLetter, 400); // Wait 0.4 second and then start typing again
 }
 
 addLetter();
@@ -114,7 +131,7 @@ window.addEventListener("scroll", () => {
     prevScrollPos = currentScrollPos;
 });
 
-
+//Message me window handling
 const openModalButton = document.getElementById("openModal");
 const modalOverlay = document.querySelector(".modal-overlay");
 const closeButton = document.querySelector(".close");
@@ -138,28 +155,15 @@ function openModal() {
 }
 
 
-const mobileMenu = document.querySelector(".mobile-menu");
-const navLinks = document.querySelector(".nav-links");
-
-mobileMenu.addEventListener("click", () => {
-    if (navLinks.classList.contains("slide-out")) {
-        navLinks.classList.remove("slide-out");
-        navLinks.classList.add("slide-in");
-    } else {
-        navLinks.classList.remove("slide-in");
-        navLinks.classList.add("slide-out");
-    }
-});
-
+//skill progress bar
 function updateProgressBar(skillName, percentage) {
     const progresscontainer = document.querySelector('.progress-container');
     progresscontainer.style.display = 'block';
 
     const progressBar = document.querySelector('.progress-bar');
     progressBar.style.width = percentage + '%';
-    // progressBar.textContent = skillName + ' ' + percentage + '%';
+    // progressBar.textContent = skillName + ' ' + percentage + '%'; // Show skill name and percentage
     progressBar.textContent = skillName ;
-
 }
 
 
