@@ -149,5 +149,16 @@ mobileMenu.addEventListener("click", () => {
     }
 });
 
+function updateProgressBar(skillName, percentage) {
+    const progresscontainer = document.querySelector('.progress-container');
+    progresscontainer.style.display = 'block';
+
+    const progressBar = document.querySelector('.progress-bar');
+    progressBar.style.width = percentage + '%';
+    // progressBar.textContent = skillName + ' ' + percentage + '%';
+    progressBar.textContent = skillName ;
+
+}
+
 
   

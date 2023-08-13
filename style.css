@@ -356,7 +356,27 @@ nav ul li a:hover {
   align-items: center;
   padding: 10px;
 }
+/* Progress bar container */
+.progress-container {
+  width: 90%;
+  border: 3px solid #919191;
+  margin: auto;
+  border-radius: 20px;
+  height: 25px;
+  display: none;
+}
 
+/* Progress bar */
+.progress-bar {
+  width: 0;
+  height: 25px;
+  background-color: #007BFF;
+  text-align: center;
+  font-weight: bold;
+  line-height: 25px;
+  color: rgb(13, 13, 13);
+  border-radius: 20px;
+}
 
 /* Work Experience Area */
 .work_experience {
