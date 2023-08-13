@@ -14,20 +14,20 @@ body.dark-mode {
 body{
   transition: background-color 0.5s ease;
   margin: 0 auto; /* Center align the body */
-  padding: 10px;
+
   border: solid 3px #8b8b8b;
   border-radius: 10px;
 }
 @media screen and (min-width: 769px) {
   body {
       max-width: 768px; /* Limit body width to 768px */  
+      padding: 10px;
   } 
 }
 @media screen and (max-width: 768px) {
   .body {
-    padding:0;
+    padding:1px;
   }
-
 }
 
 /* Navigation bar */
@@ -107,7 +107,7 @@ nav ul li a:hover {
   .nav-links.active {
       display: flex; /* Show the navigation links when active */
       width: 70vw;
-      margin: 13px;
+      
 
   }
 
@@ -115,6 +115,8 @@ nav ul li a:hover {
       text-align: center;
       padding: 10px 0; /* Apply padding vertically */
       border-bottom: #000;
+      margin-bottom: 10px;
+
   }
 
   .icon-bar {
