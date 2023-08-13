@@ -128,6 +128,17 @@ nav ul li a:hover {
   }
 }
 
+@media screen and (min-width: 769px) {
+  nav{
+    position: fixed;
+    top: 1px;
+    width: 740px;
+    border-radius: 5px;
+  }
+  .page_cover{
+    margin-top: 50px;
+  } 
+}
 
 /* html {
   scroll-behavior: smooth;
@@ -138,11 +149,12 @@ nav ul li a:hover {
 /* Cover Area */ 
 .page_cover{
   display: flex;
-  margin-top: 10px;
+  
 }
 @media screen and (max-width: 768px) {
   .page_cover {
       display: block; /* Remove flex layout for mobile view */
+      margin-top: 10px;
   }
   .profile_pic {
       margin: 0 auto; /* Center the image */
@@ -272,7 +284,7 @@ nav ul li a:hover {
   .education_details h2 , .tec_skills h2{
     font-size: 1.2rem;
   }
-  .tec_skills h1, .education h1 , .contact_social h1{
+  .tec_skills h1, .education h1 , .contact_social h1 , .work_experience h1 ,.projects h1{
     font-size: 1.7rem;
   }
 }
@@ -381,70 +393,70 @@ nav ul li a:hover {
 }
 
 /* Work Experience Area */
-.work_experience {
+.work_experience , .projects{
   margin-left: 2px;
 }
 
-.light-mode .work_experience {
+.light-mode .work_experience , .light-mode .projects {
   background-color: #f7f6f6;
 }
 
-.dark-mode .work_experience {
+.dark-mode .work_experience ,.dark-mode .projects{
   background-color: #363738;
 }
 
-.work_experience h1 {
+.work_experience h1 , .projects h1{
   margin-top: 50px;
   margin-bottom: 0;
   display: flex;
 }
 
-.work_experience h4 {
+.work_experience h4 , .projects h4{
   margin-top: 2px;
   margin-bottom: 2px;
 }
 
-.work_experience hr {
+.work_experience hr , .projects hr{
   color: aqua;
   border: solid 2px;
 }
 
-.work_data {
+.work_data , .projects_data{
   display: flex;
   margin-bottom: 20px;
   margin-left: 10px;
 }
 
-.light-mode .work_data {
+.light-mode .work_data , .light-mode .projects_data{
   background-color: #f7f1f1;
 }
 
-.dark-mode .work_data {
+.dark-mode .work_data , .dark-mode .projects_data{
   background-color: #353636;
 }
 
-.work_img {
+.work_img , .projects_img{
   width: 80px;
   height: 80px;
   text-align: center;
   padding-top: 10px;
 }
-.work_img i {
+.work_img i , .projects_img i{
   font-size: 4rem; /* Adjust the size as needed */
   color: #000000; /* Set the color for the icon */
   /* Additional styles as needed */
 }
 
-.work_experience img {
+.work_experience img , .projects img{
   width: 80px;
   border-radius: 10%;
 }
 
-.work_details {
+.work_details , .projects_details{
   margin-left: 20px;
 }
 
-.work_details h2 {
+.work_details h2 , .projects_details h2{
   margin-bottom: 0;
   font-size: 1.4rem;
 }
@@ -464,9 +476,13 @@ nav ul li a:hover {
   }
 }
 
-.work_details p {
+.work_details p, .projects_details p {
   margin-top: 0;
   margin-bottom: 5px;
+}
+.projects_data a{
+  text-decoration: none;
+  color: inherit;
 }
 
 

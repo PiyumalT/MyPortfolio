@@ -97,16 +97,18 @@ addLetter();
 
 
 
-// Get the button
+// Hide the theme button when scrolling down and show it when scrolling up
 let prevScrollPos = window.pageYOffset;
-
+const navbar = document.querySelector("nav");
 window.addEventListener("scroll", () => {
     const currentScrollPos = window.pageYOffset;
 
     if (prevScrollPos > currentScrollPos) {
         darkModeButton.style.display = "block"; // Show button when scrolling up
+        navbar.style.position = "fixed";
     } else {
         darkModeButton.style.display = "none"; // Hide button when scrolling down
+        navbar.style.position = "inherit";
     }
 
     prevScrollPos = currentScrollPos;
