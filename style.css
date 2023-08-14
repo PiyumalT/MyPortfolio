@@ -597,6 +597,11 @@ nav ul li a:hover {
 .go-to-top-button:hover ,.Send_msg_btn2:hover{
   background-color: #0056b3;
 }
+@media screen and (min-width: 769px) {
+  .go-to-top-button,.Send_msg_btn2{
+    font-size: 2rem;
+  }
+}
 
 
 
