@@ -39,7 +39,6 @@ function show_hide_list(event) {
             }(i), i * 10);
         }
     } else {
-        // data_set.style.maxHeight = "0"; // Set max-height to 0
         expand_icon.innerHTML = '<i class="fas fa-caret-down"></i>';
         for (var i = 0; i <= 50; i++) {
             setTimeout(function(index) {
@@ -75,6 +74,7 @@ document.querySelectorAll('.nav-links li a').forEach(function(link) {
     });
 });
 
+
 //animation for mobile menu
 const mobileMenu = document.querySelector(".mobile-menu");
 const navLinks = document.querySelector(".nav-links");
@@ -109,9 +109,7 @@ function clearText() {
     index = 0;
     setTimeout(addLetter, 400); // Wait 0.4 second and then start typing again
 }
-
 addLetter();
-
 
 
 // Hide the theme button when scrolling down and show it when scrolling up
@@ -130,6 +128,7 @@ window.addEventListener("scroll", () => {
 
     prevScrollPos = currentScrollPos;
 });
+
 
 //Message me window handling
 const openModalButton = document.getElementById("openModal");
@@ -166,5 +165,8 @@ function updateProgressBar(skillName, percentage) {
     progressBar.textContent = skillName ;
 }
 
+// Developed by Tharindu Piyumal
+// First version released at August 2023
+// Follow me at www.github.com/PiyumalT
 
   
