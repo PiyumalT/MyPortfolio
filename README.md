@@ -1,8 +1,11 @@
-<h1> My Portfolio </h1>
+<h1> 
+My Portfolio </h1><h3>
 
-<h3> This is a single-page website created using HTML, CSS, and JavaScript. </h3>
+This is a single-page website created using HTML, CSS, and JavaScript. </h3><i>
 
-The webpage includes external additions such as Font Awesome for icons and Cognito Forms embedded for the message-sending function. Therefore, an active internet connection is required for full functionality.
+The webpage includes external additions such as Font Awesome for icons and Cognito Forms embedded for the message-sending function. Therefore, an active internet connection is required for full functionality.</i> <h3> <a href="https://piyumalt.github.io/MyPortfolio/">
+
+View Webpage : https://piyumalt.github.io/MyPortfolio/ </a></h3>
 
 <h2> Functionalities </h2> <ol><li>
 
