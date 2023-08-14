@@ -5,9 +5,9 @@ This is a single-page website created using HTML, CSS, and JavaScript. </h3><i>
 
 The webpage includes external additions such as Font Awesome for icons and Cognito Forms embedded for the message-sending function. Therefore, an active internet connection is required for full functionality.</i> <h3> <a href="https://piyumalt.github.io/MyPortfolio/">
 
-View Webpage : https://piyumalt.github.io/MyPortfolio/ </a></h3>
+View Webpage 👉 https://piyumalt.github.io/MyPortfolio/ </a></h3>
 
-<h2> Functionalities </h2> <ol><li>
+<h2> Functionalities 👇 </h2> <ol><li>
 
 Dark Mode: Users can switch between dark mode and light mode by clicking the theme button at the top left.      </li><li>
 
