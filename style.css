@@ -214,6 +214,7 @@ nav ul li a:hover {
 .about_me p{
   margin-top: 0;
   margin-bottom: 5px;
+  height: 85px;
 }
 
 /* Data container common styles */
@@ -224,7 +225,7 @@ nav ul li a:hover {
   max-height:1000px ;
 }
 
-/* Education Area */
+
 .education, .tec_skills , .work_experience , .projects{
   margin-left: 2px;
 }
@@ -255,12 +256,14 @@ nav ul li a:hover {
 }
 
 .light-mode.education_data, .light-mode.tec_skills_data , .light-mode.work_data , .light-mode.projects_data ,.light-mode .contact_row, .light-mode .social_row{
-  background-color: #f7f1f1;
+  background-color: #f7f6f6;
 }
 .dark-mode .education_data, .dark-mode .tec_skills_data , .dark-mode .work_data , .dark-mode .projects_data,.dark-mode .contact_row, .dark-mode .social_row{
   background-color: #353636; 
 }
 
+
+/* Education Area */
 .edu_img{
   width: 80px;
   height: 80px;
@@ -285,21 +288,19 @@ nav ul li a:hover {
     font-size: 1.7rem;
   }
 }
-
 .education_details p{
   margin-top: 0;
   margin-bottom: 5px;
 }
 
+
+
 /* Skills Area */
-
-
 .tec_skills h2{
   margin-top: 10px;
   margin-bottom: 2px;
   margin-left: 20px;
 }
-
 
 .tec_skills_data_row{
   display: flex;
@@ -309,11 +310,7 @@ nav ul li a:hover {
       display: block; /* Remove flex layout for mobile view */
       margin-left: 0px;
   }
-
 }
-
-
-
 .tec_skills_data h2{
   margin-bottom: 0;
 }
@@ -338,7 +335,6 @@ nav ul li a:hover {
   text-align: center;
 }
 .tec_skill_unit{
-  /* background-color: yellow; */
   margin-left: 5px;
   align-items: center;
   padding: 10px;
@@ -352,7 +348,6 @@ nav ul li a:hover {
   height: 25px;
   display: none;
 }
-
 /* Progress bar */
 .progress-bar {
   width: 0;
@@ -365,9 +360,10 @@ nav ul li a:hover {
   border-radius: 20px;
 }
 
+
+
+
 /* Work Experience Area */
-
-
 .work_img , .projects_img{
   width: 80px;
   height: 80px;
@@ -377,14 +373,12 @@ nav ul li a:hover {
 .work_img i , .projects_img i{
   font-size: 4rem; /* Adjust the size as needed */
   color: #000000; /* Set the color for the icon */
-  /* Additional styles as needed */
 }
 
 .work_experience img , .projects img{
   width: 80px;
   border-radius: 10%;
 }
-
 
 @media screen and (max-width: 768px) {
   .work_details h2,
@@ -429,10 +423,7 @@ nav ul li a:hover {
   align-items: center;
   margin-bottom: 15px;
 }
-
-
 /* Contact Details */
-
 .contact_details{
   margin: auto;
   margin-top: 20px;
@@ -447,7 +438,6 @@ nav ul li a:hover {
   .contact_details ul{
       display: block; /* Remove flex layout for mobile view */
   }
-  
 }
 
 .contact_details li {
@@ -468,9 +458,7 @@ nav ul li a:hover {
   display: flex;
   margin: auto;
 }
-
 .social_container {
-  
   text-decoration: none;
   margin-left: 30px;
   text-align: center;
@@ -495,7 +483,6 @@ nav ul li a:hover {
 .social_icon i {
   background-color: inherit;
 }
-
 .social_name {
   font-size: 14px;
   margin-top: 2px;
@@ -506,9 +493,10 @@ nav ul li a:hover {
 
 /* Additional styling for social media icons on hover */
 .social_container:hover {
-  color: #007bff; /* Change color on hover */
+  color: #007bff; 
   transition: color 0.3s ease; /* Add transition for hover effects */
 }
+
 
 /* Footer */
 /* Footer Styles */
@@ -568,6 +556,7 @@ nav ul li a:hover {
   font-size: 1.1rem;
 }
 
+
 /* Go to Top Button */
 .go-to-top-button {
   position: fixed;
@@ -605,7 +594,7 @@ nav ul li a:hover {
 
 
 
-/* Style the modal */
+/* Style the Message popup window */
 .modal-overlay {
   display: none;
   position: fixed;
