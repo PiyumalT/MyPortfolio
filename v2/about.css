@@ -1,0 +1,122 @@
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    padding-top: 1%;
+}
+
+.about-image img {
+    max-width: 500px;
+    height: auto;
+}
+.about .light-mode {
+    color: blue;
+
+}
+
+.about-content {
+    flex: 1;
+}
+.about h3{
+    margin-top: 0;
+    margin-left: 5px;
+}
+.about h1{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.about .buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.about .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.about .btn-cv {
+    background-color: #3498db;
+    color: inherit;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.about .btn-cv:hover{
+    background-color: #217dbb;
+    color: inherit;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.about .btn-contact {
+    background-color: #1c9942;
+    color: inherit;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.about .btn-contact:hover{
+    background-color: #116b2c;
+    color: inherit;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        margin-bottom: 20px;
+    }
+    .about h2{
+        font-size: 0.7rem;
+        text-align: left;
+    }
+    .about h1{
+        font-size: 2rem;
+
+    }
+
+}
+@media screen and (min-width: 769px) {
+    .about {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .about-image img {
+        margin-right: 20px;
+    }
+    .about h1{
+        font-size: 3rem;
+    }
+    .about h2{
+        font-size: 1rem;
+    }
+    .about h3{
+        text-align: center;
+    }
+    .about p{
+        font-size: 1.5rem;
+    }
+    .about .buttons{
+        margin-top: 10px;
+        gap: 30px;
+    }
+    .about .btn{
+        font-size: 1.2rem;
+        width: 200px;
+    }
+    
+}

@@ -1,0 +1,119 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+.dark-mode {
+    background-color: #111111; /* Set your dark background color */
+    color: #ffffff; /* Set your dark text color */
+}
+
+.light-mode {
+    background-color: #f2f2f2; /* Set your light background color */
+    color: #333333; /* Set your light text color */
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7c777717; /* You can set your desired background color */
+    padding: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: large;
+}
+
+.logo img {
+    height: 40px; /* Adjust the height as needed */
+}
+.logo i{
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bolder;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit; /* You can set your desired link color */
+}
+
+#dark-mode-btn {
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#dark-mode-btn:hover {
+    background-color: #555555;
+}
+
+/* Mobile menu */
+.menu-toggle {
+    display: none;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.mobile-menu-toggle span {
+    width: 30px;
+    height: 3px;
+    display: block;
+    background-color: #ffffff;
+
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 15px;
+        left: 0;
+        background-color: #7c777717;
+        width: 80%;
+        margin-left: 20%;
+    }
+
+    .nav-links.active {
+        display: flex;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .menu-toggle:checked + .nav-links {
+        display: flex;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+}
