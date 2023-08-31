@@ -41,6 +41,7 @@ body {
     display: flex;
     align-items: center;
     gap: 30px;
+    z-index: 1;
 }
 
 .nav-links li {
@@ -97,9 +98,16 @@ body {
         position: absolute;
         top: 15px;
         left: 0;
-        background-color: #7c777717;
+        /* background-color: #7c777717; */
+        background-color: inherit;
         width: 80%;
         margin-left: 20%;
+    }
+    .dark-mode .nav-links {
+        background-color: #111111ed;
+    }
+    .light-mode .nav-links {
+        background-color: #e7e7e7e3;
     }
 
     .nav-links.active {
