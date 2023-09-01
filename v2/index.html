@@ -219,17 +219,46 @@
                 </ul>
             </div>
             <div class="contact-form-box">
-                <h3>Send Message</h3>
-                <div class="modal-overlay">
-                    <div class="modal-content">
-                        <iframe src="https://www.cognitoforms.com/f/F4Ihh9BGeEyVlDhgoTV1Zw/1" style="border:0;width:100%;" height="624"></iframe>
-                        <script src="https://www.cognitoforms.com/f/iframe.js"></script>
-                    </div>
-                </div>
-                <!-- Embed your contact form here -->
-            </div>
+    <h3>Contact Form</h3>
+    <!-- Your contact form content goes here -->
+    <button id="openPopupButton">Open Popup</button>
+    <iframe id="popupIframe" src="https://www.cognitoforms.com/f/F4Ihh9BGeEyVlDhgoTV1Zw/1" style="border: 0; width: 100%; display: none;" height="520" frameborder="0">
+        <!-- Close button within the iframe -->
+        <button id="closePopupButton" style="position: absolute; top: 10px; right: 10px;">Close</button>
+    </iframe>
+</div>
+<script>
+    const openPopupButton = document.getElementById("openPopupButton");
+    const popupIframe = document.getElementById("popupIframe");
+    const closePopupButton = popupIframe.contentDocument.getElementById("closePopupButton");
+
+    // Function to open the popup
+    function openPopup() {
+        popupIframe.style.display = "block";
+    }
+
+    // Function to close the popup
+    function closePopup() {
+        popupIframe.style.display = "none";
+    }
+
+    // Event listener for the button click to open the popup
+    openPopupButton.addEventListener("click", openPopup);
+
+    // Event listener for the close button within the iframe
+    closePopupButton.addEventListener("click", closePopup);
+</script>
+
         </div>
     </section>
+
+    <!-- <div class="modal-overlay">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe src="https://www.cognitoforms.com/f/F4Ihh9BGeEyVlDhgoTV1Zw/1" style="border:0;width:100%;" height="624"></iframe>
+            <script src="https://www.cognitoforms.com/f/iframe.js"></script>
+        </div>
+    </div> -->
 
 
     <footer class="footer">
