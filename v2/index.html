@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="style.css">
+
     <script src="Navigation.js"></script>
+    <!-- <script src="about.js"></script> -->
+    <!-- <script src="projects.js"></script> -->
+    <script src="script.js"></script>
     <title>Portfolio 2.0</title>
 
 </head>
@@ -33,6 +37,8 @@
         </ul>
     </nav>
 
+
+
     <section class="about">
         <div class="about-image">
             <img src="../v2/img/my_img(2).png" alt="Your Image">
@@ -54,60 +60,149 @@
     
     <section class="projects">
         <div class="heading">
-            <h1>Projects</h1>
-            <p>Here are some of my projects</p>
+            <h1 class="a"onclick="toggleProjectsVisibility()">Projects</h1>
         </div>
-        <div class="project">
-            <div class="project-details">
-                <h2>Project 1</h2>
-                <p>Description of Project 1...</p>
-                <p>Technologies: HTML, CSS, JavaScript</p>
-                <a href="github-link-1" target="_blank">GitHub</a>
+        <div class="projects_Details_container" style="opacity: 1; max-height: 10000px;">
+            <div class="project" style="opacity: 1; max-height: 1000px;">
+                <div class="project-details">
+                    <h2>Project 1</h2>
+                    <p>Description of Project 1...</p>
+                    <p>Technologies: HTML, CSS, JavaScript</p>
+                    <a href="github-link-1" target="_blank">GitHub</a>
+                </div>
+                <img src="project1.jpg" alt="Project 1">
             </div>
-            <img src="project1.jpg" alt="Project 1">
-        </div>
 
-        <div class="project">
-            <img src="project1.jpg" alt="Project 1">
-            <div class="project-details">
-                <h2>Project 1</h2>
-                <p>Description of Project 1...</p>
-                <p>Technologies: HTML, CSS, JavaScript</p>
-                <a href="github-link-1" target="_blank">GitHub</a>
+            <div class="project" style="opacity: 1; max-height: 1000px;">
+                <img src="project1.jpg" alt="Project 1">
+                <div class="project-details">
+                    <h2>Project 1</h2>
+                    <p>Description of Project 1...</p>
+                    <p>Technologies: HTML, CSS, JavaScript</p>
+                    <a href="github-link-1" target="_blank">GitHub</a>
+                </div>
             </div>
-        </div>
 
-        <div class="project">
-            <img src="project1.jpg" alt="Project 1">
-            <div class="project-details">
-                <h2>Project 1</h2>
-                <p>Description of Project 1...</p>
-                <p>Technologies: HTML, CSS, JavaScript</p>
-                <a href="github-link-1" target="_blank">GitHub</a>
+            <div class="project" style="opacity: 1; max-height: 1000px;">
+                <img src="project1.jpg" alt="Project 1">
+                <div class="project-details">
+                    <h2>Project 1</h2>
+                    <p>Description of Project 1...</p>
+                    <p>Technologies: HTML, CSS, JavaScript</p>
+                    <a href="github-link-1" target="_blank">GitHub</a>
+                </div>
             </div>
-        </div>
 
-        <div class="project">
-            <img src="project1.jpg" alt="Project 1">
-            <div class="project-details">
-                <h2>Project 1</h2>
-                <p>Description of Project 1...</p>
-                <p>Technologies: HTML, CSS, JavaScript</p>
-                <a href="github-link-1" target="_blank">GitHub</a>
+            <div class="project" style="opacity: 1; max-height: 1000px;">
+                <img src="project1.jpg" alt="Project 1">
+                <div class="project-details">
+                    <h2>Project 1</h2>
+                    <p>Description of Project 1...</p>
+                    <p>Technologies: HTML, CSS, JavaScript</p>
+                    <a href="github-link-1" target="_blank">GitHub</a>
+                </div>
             </div>
-        </div>
 
-        <div class="project">
-            <img src="project1.jpg" alt="Project 1">
-            <div class="project-details">
-                <h2>Project 1</h2>
-                <p>Description of Project 1...</p>
-                <p>Technologies: HTML, CSS, JavaScript</p>
-                <a href="github-link-1" target="_blank">GitHub</a>
+            <div class="project" style="opacity: 1; max-height: 1000px;">
+                <img src="project1.jpg" alt="Project 1">
+                <div class="project-details">
+                    <h2>Project 1</h2>
+                    <p>Description of Project 1...</p>
+                    <p>Technologies: HTML, CSS, JavaScript</p>
+                    <a href="github-link-1" target="_blank">GitHub</a>
+                </div>
             </div>
+            <!-- Repeat the structure for other projects -->
         </div>
-        <!-- Repeat the structure for other projects -->
     </section>
+
+    <section class="education">
+        <div class="heading" >
+            <h1 onclick="toggleEducationDetails()">Education</h1>
+        </div>
+        <div class="education_details_container">
+            <div class="education-detail">
+                <h3>University 1</h3>
+                <p>Degree: Bachelor of Science</p>
+                <p>Field of Study: Computer Science</p>
+                <p>Year: 2020 - 2024</p>
+            </div>
+            <div class="education-detail">
+                <h3>University 2</h3>
+                <p>Degree: Master of Science</p>
+                <p>Field of Study: Software Engineering</p>
+                <p>Year: 2024 - 2026</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="technical-skills">
+        <div class="heading" onclick="toggleSkillBoxes()">
+            <h1>Technical Skills</h1>
+        </div>
+        <div class="skills-container">
+            <div class="skill-box">
+                <h3>Front-end Development</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <!-- Add more front-end skills here -->
+                </ul>
+            </div>
+            <div class="skill-box">
+                <h3>Back-end Development</h3>
+                <ul>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>Python</li>
+                    <li>Django</li>
+                    <!-- Add more back-end skills here -->
+                </ul>
+            </div>
+            <div class="skill-box">
+                <h3>Database Management</h3>
+                <ul>
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                    <li>PostgreSQL</li>
+                    <li>Firebase</li>
+                    <!-- Add more database skills here -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-me">
+        <div class="section-heading">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="contact-details-container">
+            <div class="contact-details-box">
+                <h3>Contact Details</h3>
+                <p>Email: example@example.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="social-media-box">
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://twitter.com/your-twitter" target="_blank">Twitter</a></li>
+                    <!-- Add more social media links here -->
+                </ul>
+            </div>
+            <div class="contact-form-box">
+                <h3>Contact Form</h3>
+                <!-- Embed your contact form here -->
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
     
 
 
