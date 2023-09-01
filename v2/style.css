@@ -23,8 +23,7 @@
 .project ,
 .skill-box , 
 .contact-details-box
-.social-media-box,
-.contact-form-box {
+.social-media-box {
     /* width: calc(33.33% - 20px); */
     max-width: 300px;
     margin-bottom: 40px;
@@ -41,8 +40,7 @@
 .dark-mode .education-detail , 
 .dark-mode .skill-box, 
 .dark-mode .contact-details-box,
-.dark-mode .social-media-box,
-.dark-mode .contact-form-box{
+.dark-mode .social-media-box{
     box-shadow: 0px 2px 5px rgba(237, 236, 236, 0.2); /* Transparent white background */
 }
 
@@ -50,8 +48,7 @@
 .light-mode .education-detail , 
 .light-mode .skill-box, 
 .light-mode .contact-details-box,
-.light-mode .social-media-box,
-.light-mode .contact-form-box{
+.light-mode .social-media-box{
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Transparent white background */
 }
 
@@ -59,7 +56,7 @@
     background-color: rgba(14, 13, 13, 0.8); /* Transparent white background */
     padding: 20px;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 0;
     width: 100%;
     height: 100%;
@@ -70,15 +67,13 @@
 .dark-mode .project-details , 
 .dark-mode .education-details, 
 .dark-mode .contact-details-box,
-.dark-mode .social-media-box,
-.dark-mode .contact-form-box{
+.dark-mode .social-media-box{
     background-color: rgba(14, 13, 13, 0.8); /* Transparent white background */
 }
 .light-mode .project-details , 
 .light-mode .education-details, 
 .light-mode .contact-details-box,
-.light-mode .social-media-box,
-.light-mode .contact-form-box{
+.light-mode .social-media-box{
     background-color:rgba(237, 236, 236, 0.8); /* Transparent white background */
 }
 
@@ -193,8 +188,7 @@
 }
 
 .contact-details-box,
-.social-media-box,
-.contact-form-box {
+.social-media-box{
     border-radius: 10px;
     min-width: 200px;
     padding: 20px;
@@ -227,12 +221,16 @@
     font-size: 24px; /* Adjust the icon size as needed */
     border-radius: 50%;/* Background color for the circular icon */
     color: inherit; /* Icon color */
-
     display: flex;
     justify-content: center;
     align-items: center;
     border:2px solid rgb(4, 126, 187);
 }
+.social-media-list a i:hover{
+    background-color: rgba(169, 169, 169, 0.309);
+    transition: background-color 0.3s ease;
+}
+
 .social-media-list i{
     margin: auto;
 }
@@ -250,8 +248,7 @@
     }
 
     .contact-details-box,
-    .social-media-box,
-    .contact-form-box {
+    .social-media-box {
         margin-bottom: 20px;
     }
     .social-media-box ul {
@@ -270,8 +267,7 @@
 @media (min-width: 769px) {
 
     .contact-details-box,
-    .social-media-box,
-    .contact-form-box {
+    .social-media-box {
         width: 500px;
         max-width: 600px;
     }
@@ -289,57 +285,4 @@
 
 /* styles.css */
 /* ... (other styles remain the same) */
-
-/* Footer styles */
-.footer {
-    background-color: #333; /* Background color for the footer */
-    color: #fff; /* Text color */
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer p {
-    margin: 0;
-}
-.footer-content a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.footer-links {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px;
-}
-
-.footer-links li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.footer-links a {
-    text-decoration: none;
-    color: #fff;
-}
-
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-links li {
-        margin: 5px 0;
-    }
-}
 

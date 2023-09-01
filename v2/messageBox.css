@@ -1,0 +1,69 @@
+
+/* Style the Message popup window */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+  }
+  
+  .modal-content {
+    background-color: #f4f4f4e3;
+    margin:auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: right;
+    max-height: 99vh;
+  }
+  .modal-content .close{
+    font-size: 30px;
+    color: #333;
+    text-align: right;
+    border-radius: 50%;
+    border: 2px solid #333;
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .modal-content .close:hover{
+    background-color: #f64150;
+    transition: background-color 0.3s ease;
+  }
+  .modal-content iframe{
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  .contact_form_btn{
+    text-align: center;
+  }
+  #openModal{
+    font-size: 1.1rem;
+    width: auto;
+    padding: 6px;
+    border-block-color: aqua;
+    border-width: 3px;
+    border-color: aqua;
+  }
+  /* Media query for mobile devices */
+@media (max-width: 768px) {
+    .contact_form_btn{
+        text-align: center;
+    }
+}
+
+/* Media query for desktop devices */
+@media (min-width: 769px) {
+    .contact_form_btn{
+        text-align: left;
+        margin-left: 20px;
+
+    }
+}

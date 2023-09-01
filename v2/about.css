@@ -24,17 +24,26 @@
 .about h3{
     margin-top: 0;
     margin-left: 5px;
+    font-family: "Tahoma", sans-serif;
+    font-weight: lighter;
+    
 }
 .about h1{
     margin-bottom: 5px;
     margin-top: 5px;
     font-family: "Times New Roman", Times, serif;
 }
+.about p{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    height: 50px;
+    width: 100%;
+    text-align: left;
+}
 
 .about .buttons {
     margin-top: 20px;
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .about .btn {
@@ -93,6 +102,7 @@
     }
     .about-content{
         margin-top: -30px;
+        width: 100%;
     }
 
 }

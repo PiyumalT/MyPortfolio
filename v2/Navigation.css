@@ -53,16 +53,28 @@ body {
     color: inherit; /* You can set your desired link color */
 }
 
-#dark-mode-btn {
+#LightModebtn{
+    background-color: #ffffff;
+    color: #333333;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: block;
+}
+#LightModebtn:hover{
+    background-color: #e7e7e7;
+}
+#DarkModebtn{
     background-color: #333333;
     color: #ffffff;
     border: none;
     padding: 8px 16px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    display: none;
 }
-
-#dark-mode-btn:hover {
+#DarkModebtn:hover{
     background-color: #555555;
 }
 
