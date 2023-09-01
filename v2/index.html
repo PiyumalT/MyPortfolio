@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Include your custom CSS -->
 
     <script src="Navigation.js"></script>
     <!-- <script src="about.js"></script> -->
@@ -31,7 +33,7 @@
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#skills">Skills</a></li>
+            <li><a href="#technical-skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><button id="mode-btn" onclick="toggleMode()">Dark Mode</button></li>
         </ul>
@@ -58,7 +60,7 @@
 
 
     
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="heading">
             <h1 class="a"onclick="toggleProjectsVisibility()">Projects</h1>
         </div>
@@ -116,28 +118,8 @@
         </div>
     </section>
 
-    <section class="education">
-        <div class="heading" >
-            <h1 onclick="toggleEducationDetails()">Education</h1>
-        </div>
-        <div class="education_details_container">
-            <div class="education-detail">
-                <h3>University 1</h3>
-                <p>Degree: Bachelor of Science</p>
-                <p>Field of Study: Computer Science</p>
-                <p>Year: 2020 - 2024</p>
-            </div>
-            <div class="education-detail">
-                <h3>University 2</h3>
-                <p>Degree: Master of Science</p>
-                <p>Field of Study: Software Engineering</p>
-                <p>Year: 2024 - 2026</p>
-            </div>
-        </div>
-    </section>
 
-
-    <section class="technical-skills">
+    <section class="technical-skills" id="technical-skills">
         <div class="heading" onclick="toggleSkillBoxes()">
             <h1>Technical Skills</h1>
         </div>
@@ -175,8 +157,33 @@
         </div>
     </section>
 
+
+
+    <section class="education">
+        <div class="heading" >
+            <h1 onclick="toggleEducationDetails()">Education</h1>
+        </div>
+        <div class="education_details_container">
+            <div class="education-detail">
+                <h3>University 1</h3>
+                <p>Degree: Bachelor of Science</p>
+                <p>Field of Study: Computer Science</p>
+                <p>Year: 2020 - 2024</p>
+            </div>
+            <div class="education-detail">
+                <h3>University 2</h3>
+                <p>Degree: Master of Science</p>
+                <p>Field of Study: Software Engineering</p>
+                <p>Year: 2024 - 2026</p>
+            </div>
+        </div>
+    </section>
+
+
+    
+
     <section class="contact-me">
-        <div class="section-heading">
+        <div class="heading">
             <h2>Contact Me</h2>
         </div>
         <div class="contact-details-container">
@@ -186,19 +193,56 @@
                 <p>Phone: (123) 456-7890</p>
             </div>
             <div class="social-media-box">
-                <h3>Social Media</h3>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://twitter.com/your-twitter" target="_blank">Twitter</a></li>
+                <h3>Find Me</h3>
+                <ul class="social-media-list">
+                    <li>
+                        <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/your-github" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://medium.com/@your-medium" target="_blank">
+                            <i class="fab fa-medium"></i> Medium
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/your-facebook" target="_blank">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </a>
+                    </li>
                     <!-- Add more social media links here -->
                 </ul>
             </div>
             <div class="contact-form-box">
-                <h3>Contact Form</h3>
+                <h3>Send Message</h3>
+                <div class="modal-overlay">
+                    <div class="modal-content">
+                        <iframe src="https://www.cognitoforms.com/f/F4Ihh9BGeEyVlDhgoTV1Zw/1" style="border:0;width:100%;" height="624"></iframe>
+                        <script src="https://www.cognitoforms.com/f/iframe.js"></script>
+                    </div>
+                </div>
                 <!-- Embed your contact form here -->
             </div>
         </div>
     </section>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 <a href="www/github.com/PiyumalT">Tharindu Piyumal</a>. All rights reserved </p>
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
     
     
     
