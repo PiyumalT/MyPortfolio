@@ -1,4 +1,4 @@
-// script.js
+
 function toggleProjectsVisibility() {
     const projects = document.querySelectorAll(".project");
     
@@ -27,7 +27,6 @@ function toggleProjectsVisibility() {
 
 }
 
-/// script.js
 function toggleEducationDetails() {
     const educationDetailsContainers = document.querySelectorAll(".education-details-container");
     const educationDetails = document.querySelectorAll(".education-detail");
@@ -53,7 +52,7 @@ function toggleEducationDetails() {
     });
 }
 
-// script.js
+
 function toggleSkillBoxes() {
     const skillBoxes = document.querySelectorAll(".skill-box");
 
