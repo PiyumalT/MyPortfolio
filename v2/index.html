@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Navigation.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="messageBox.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Include your custom CSS -->
+        
+
+
+    <!-- <script src="about.js"></script> -->
+    <!-- <script src="projects.js"></script> -->
+    <title>Portfolio 2.0</title>
+
+
+</head>
+<body class="dark-mode"></body>
+
+    <nav class="navbar">
+        <div class="logo" id="logo">
+            <!-- <img src="logo.png" alt="Logo"> -->
+            <a href="#logo"><i>PiyumalT</i></a> 
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" onclick="toggleMobileMenu()">
+        <label for="menu-toggle" class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact-me">Contact</a></li>
+            <li><a href="#technical-skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><button id="LightModebtn" onclick="toggleMode()" style="display: block;">Light Mode</button></li>
+            <li><button id="DarkModebtn" onclick="toggleMode()" style="display: none;">Dark Mode</button></li>
+
+        </ul>
+    </nav>
+    
+
+
+
+
+    <section class="about" id="about">
+        <div class="about-image">
+            <img src="../v2/img/my_img(2).png" alt="Your Image">
+        </div>
+        <div class="about-content">
+            <h2>Hello, I'm</h2>
+            <h1>Tharindu Piyumal</h1>
+            <h3>Software Engineering Undergraduate</h3>
+            <p id="animatedText"></p>
+            <div class="buttons">
+                <a href="Tharindu_Piyumal_cv.pdf" class="btn btn-cv" download>Download CV</a>
+                <a href="#contact-me" class="btn btn-contact">Contact Me</a>
+            </div>
+        </div>
+
+    </section>
+
+    
+    <section class="projects" id="projects">
+        <div class="heading">
+            <h1 class="a"onclick="toggleProjectsVisibility()">Projects</h1>
+        </div>
+        <div class="projects_Details_container" style="opacity: 1; max-height: 10000px;">
+
+            <div class="project" style="opacity: 1; max-height: 1000px;">
+                <div class="project-details">
+                    <h2>E-Shop Backend</h2>
+                    <h3>NodeJs | MongoDB</h3>
+                    <p>A backend for e-commerce website</p>
+                    <a href="https://github.com/PiyumalT/eshop_backend" target="_blank">
+                        <button class="btn btn-viewCode">GitHub</button>
+                    </a>
+                </div>
+                <img src="project1.jpg" alt="Project 1">
+            </div>
+
+            <div class="project" style="opacity: 1; max-height: 1000px;">
+                <div class="project-details">
+                    <h2>MyPortfolio</h2>
+                    <h3>HTML | CSS | JavaScript</h3>
+                    <p>My Personal Portfolio web page. (This one)</p>
+                    <a href="https://github.com/PiyumalT/MyPortfolio" target="_blank">
+                        <button class="btn btn-viewCode">GitHub</button>
+                    </a>
+                </div>
+                <img src="project1.jpg" alt="Project 1">
+            </div>
+
+            <div class="project" style="opacity: 1; max-height: 1000px;">
+                <div class="project-details">
+                    <h2>ecommerce_system </h2>
+                    <h3>Springboot | React | Mysql </h3>
+                    <p>
+                        A full stack ecommerce system with admin and user functionalities.
+                    </p>
+                    <a href="https://github.com/PiyumalT/ecommerce_system" target="_blank">
+                        <button class="btn btn-viewCode">GitHub</button>
+                    </a>
+                </div>
+                <img src="project1.jpg" alt="Project 1">
+            </div>
+
+            <div class="project" style="opacity: 1; max-height: 1000px;">
+                <div class="project-details">
+                    <h2>Online Shop </h2>
+                    <h3>PHP | HTML | CSS | JavaScript | Mysql</h3>
+                    <p>A Full system for e-commerce shop</p>
+                    <a href="https://github.com/PiyumalT/Online_Shop" target="_blank">
+                        <button class="btn btn-viewCode">GitHub</button>
+                    </a>
+                </div>
+                <img src="project1.jpg" alt="Project 1">
+            </div>
+
+            <div class="project" style="opacity: 1; max-height: 1000px;">
+                <div class="project-details">
+                    <h2>Pygame Projects</h2>
+                    <h3>Python | Pygame</h3>
+                    <p>Several Mini games for PC</p>
+                    <a href="https://github.com/PiyumalT/Hunting_Game" target="_blank">
+                        <button class="btn btn-viewCode">GitHub</button>
+                    </a>
+                    <a href="https://github.com/PiyumalT/classic_Snake_Game" target="_blank">
+                        <button class="btn btn-viewCode">GitHub</button>
+                    </a>
+                </div>
+                <img src="project1.jpg" alt="Project 1">
+            </div>
+
+            <!-- Repeat the structure for other projects -->
+        </div>
+    </section>
+
+
+    <section class="technical-skills" id="technical-skills">
+        <div class="heading" onclick="toggleSkillBoxes()">
+            <h1>Technical Skills</h1>
+        </div>
+        <div class="skills-container">
+            <div class="skill-box">
+                <h3>Front-end Development</h3>
+                <ul class="Front-end">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                </ul>
+            </div>
+            <div class="skill-box">
+                <h3>Back-end Development</h3>
+                <ul class="Back-end">
+                    <li>PHP</li>
+                    <li>Node.js</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>c</li>
+                </ul>
+            </div>
+            <div class="skill-box">
+                <h3>Database Management</h3>
+                <ul class="Database">
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                </ul>
+                <h3>Graphic Design</h3>
+                <ul class="Graphic">
+                    <li>Photoshop</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="education" id="education">
+        <div class="heading" >
+            <h1 onclick="toggleEducationDetails()">Education</h1>
+        </div>
+        <div class="education_details_container">
+            <div class="education-detail">
+                <h3>BSc. (Hons) In Software Engineering</h3>
+                <p>Undergraduate at University of Kelaniya , Sri Lanka</p>
+                <!-- <p>Domains: </p> -->
+                <p>2021 - present</p>
+            </div>
+            <div class="education-detail">
+                <h3>G.C.E Advance Level Level Examination</h3>
+                <p>Richmond Colleage - Galle</p>
+                <p>(2019) | Z Score - 1.4317</p>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <section class="contact-me" id="contact-me">
+        <div class="heading">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="contact-details-container">
+            <div class="contact-details-box">
+                <h3>Contact Details</h3>
+                <div class="contact_info">
+                    <p>Email: <a href="mailto:tpc@eay.jp">tpc@eay.jp</a></p>
+                    <p>Phone: 0779969532</p>
+                </div>
+                <div class="contact_form_btn">
+                    <button id="openModal" class="social_container">
+                        <i class="fas fa-envelope"></i> &nbsp;  Send Message
+                    </button>
+                </div>
+    
+                <!-- The modal -->
+                <div class="modal-overlay">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <br>
+                        <iframe src="https://www.cognitoforms.com/f/F4Ihh9BGeEyVlDhgoTV1Zw/1" style="border:0;width:100%;" height="624"></iframe>
+                        <script src="https://www.cognitoforms.com/f/iframe.js"></script>
+                    </div>
+                </div>
+            </div>
+            <div class="social-media-box">
+                <h3>Find Me</h3>
+                <ul class="social-media-list">
+                    <li>
+                        <a href="https://www.linkedin.com/in/piyumalt/" target="_blank">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/PiyumalT/" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://piyumalt.medium.com/" target="_blank">
+                            <i class="fab fa-medium"></i> Medium
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/tharindu.piyumal.92" target="_blank">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </a>
+                    </li>
+                    <!-- Add more social media links here -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 <a href="www/github.com/PiyumalT">Tharindu Piyumal</a>. All rights reserved </p>
+            <ul class="footer-links">
+                <li><a href="#logo">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#technical-skills">Skills</a></li>
+                <li><a href="#contact-me">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+    <script src="messageBox.js"></script>
+    <script src="Navigation.js"></script>
+    <script src="about.js"></script>
+    
+
+    <div id="goToTopButton" class="go-to-top-button" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <div id="send_msg_btn2" class="Send_msg_btn2" onclick="openModal()">
+        <i class="fas fa-envelope"></i>
+    </div>
+
+    
+    
+    
+    
+    
+
+
+    <!-- Rest of your content goes here -->
+
+    
+</body>
+</html>
