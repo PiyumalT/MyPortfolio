@@ -44,6 +44,7 @@
   .contact_form_btn{
     text-align: center;
     width: 200px;
+    
   }
   #openModal{
     font-size: 1.1rem;
@@ -52,6 +53,8 @@
     border-block-color: aqua;
     border-width: 3px;
     border-color: aqua;
+    cursor: pointer;
+
   }
   /* Media query for mobile devices */
 @media (max-width: 768px) {

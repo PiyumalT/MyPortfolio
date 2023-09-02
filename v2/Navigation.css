@@ -7,11 +7,20 @@ body {
 .dark-mode {
     background-color: #111111; /* Set your dark background color */
     color: #ffffff; /* Set your dark text color */
+    background-image: url('../v2/img/fon2.png');
+    background-size: cover; /* Adjust the background size to cover the entire screen */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-attachment: fixed; /* Prevent the background image from scrolling when the user scrolls the page */
 }
-
 .light-mode {
     background-color: #f2f2f2; /* Set your light background color */
     color: #333333; /* Set your light text color */
+    background-image: url('../v2/img/fon.png');
+    background-size: cover; /* Adjust the background size to cover the entire screen */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-attachment: fixed; /* Prevent the background image from scrolling when the user scrolls the page */
 }
 
 

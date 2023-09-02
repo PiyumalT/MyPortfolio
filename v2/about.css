@@ -86,6 +86,10 @@
         flex-direction: column;
         text-align: center;
     }
+    .about .buttons{
+        justify-content: center;
+        gap: 20px;
+    }
 
     .about-image img {
         margin-bottom: 20px;
