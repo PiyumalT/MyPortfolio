@@ -58,8 +58,8 @@
     position: absolute;
     top: 30%;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 200px;;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -68,13 +68,13 @@
 .dark-mode .education-details, 
 .dark-mode .contact-details-box,
 .dark-mode .social-media-box{
-    background-color: rgba(14, 13, 13, 0.8); /* Transparent white background */
+    background-color: rgba(14, 13, 13, 0.94); /* Transparent white background */
 }
 .light-mode .project-details , 
 .light-mode .education-details, 
 .light-mode .contact-details-box,
 .light-mode .social-media-box{
-    background-color:rgba(237, 236, 236, 0.8); /* Transparent white background */
+    background-color:rgba(237, 236, 236, 0.92); /* Transparent white background */
 }
 
 .project img {
@@ -82,13 +82,57 @@
     height: auto;
     margin-bottom: 10px;
 }
+.light-mode .project-details{
+    color: black;
+}
 
 .project-details h2 {
     margin: 0;
+    text-align: center;
+}
+.dark-mode .project-details h2{
+    color: #b99813;
+}
+.light-mode .project-details h2{
+    color: #470505;
 }
 
-.project-details a {
-    margin-top: auto;
+.project-details h3 {
+    text-align: center;
+    font-family: "comic sans ms";
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+.dark-mode .project-details h3{
+    color: #4db53f;
+}
+.light-mode .project-details h3{
+    color: #820000;
+}
+
+.project-details p {
+    text-align: center;
+    font-family: "comic sans ms";
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.dark-mode .project-details p{
+    color: #c9a001;
+}
+.light-mode .project-details p{
+    color: #470505;
+}
+
+.project-details button{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000000;
+    padding: 10px;
+    width: 98%;
+    text-align: center;
+    background-color:#b5a152;
+    border-radius: 5px;
+  
 }
 
 /* Media query for mobile devices */
@@ -123,6 +167,9 @@
     .contact-details-container{
         gap: 100px;
         row-gap: 15px;
+    }
+    .project-details p{
+        font-size: 1.1rem;
     }
 }
 
@@ -172,9 +219,23 @@
 }
 .skill-box h3{
     margin-bottom: 0;
+    margin-top: 3px;
+
 }
 .skill-box ul{
     margin-left: 15%;
+}
+.skill-box li{
+    margin-bottom: 3px;
+}
+.skill-box .Front-end li{
+    margin-bottom: 10px;
+}
+.skill-box .Back-end li{
+    margin-bottom: 5px;
+}
+.skill-box .Graphic{
+    margin-bottom: 5px;
 }
 
 .social-media-box ul {
@@ -234,8 +295,14 @@
 .social-media-list i{
     margin: auto;
 }
+
 .contact-details-box p{
     margin-left: 20px;
+    font-size: 1.2rem;
+}
+.contact_info a{
+    text-decoration: none;
+    color: inherit;
 }
 /* ================================= */
 
@@ -278,6 +345,10 @@
         font-size: 34px;
         width: 50px; /* Adjust the width and height for the circle */
         height: 50px;
+    }
+    .contact-details-box .contact_info{
+        display: flex;
+        gap: 70px;
     }
 }
 

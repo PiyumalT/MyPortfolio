@@ -29,6 +29,10 @@ body {
 .logo img {
     height: 40px; /* Adjust the height as needed */
 }
+.logo a{
+    text-decoration: none;
+    color: inherit;
+}
 .logo i{
     margin-left: 20px;
     font-size: 20px;

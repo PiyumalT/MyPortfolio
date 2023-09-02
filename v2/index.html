@@ -23,9 +23,9 @@
 <body class="dark-mode"></body>
 
     <nav class="navbar">
-        <div class="logo">
+        <div class="logo" id="logo">
             <!-- <img src="logo.png" alt="Logo"> -->
-            <i>PiyumalT</i>
+            <a href="#logo"><i>PiyumalT</i></a> 
         </div>
         <input type="checkbox" id="menu-toggle" class="menu-toggle" onclick="toggleMobileMenu()">
         <label for="menu-toggle" class="mobile-menu-toggle">
@@ -48,7 +48,7 @@
 
 
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-image">
             <img src="../v2/img/my_img(2).png" alt="Your Image">
         </div>
@@ -71,56 +71,72 @@
             <h1 class="a"onclick="toggleProjectsVisibility()">Projects</h1>
         </div>
         <div class="projects_Details_container" style="opacity: 1; max-height: 10000px;">
+
             <div class="project" style="opacity: 1; max-height: 1000px;">
                 <div class="project-details">
                     <h2>E-Shop Backend</h2>
+                    <h3>NodeJs | MongoDB</h3>
                     <p>A backend for e-commerce website</p>
-                    <p>Technologies: Node</p>
-                    <!-- <button class="btn btn-cv" onclick="window.location.href=''">GitHub</button> -->
-                    <a href="github-link-1" target="_blank">GitHub</a>
+                    <a href="https://github.com/PiyumalT/eshop_backend" target="_blank">
+                        <button class="btn btn-viewCode">GitHub</button>
+                    </a>
                 </div>
                 <img src="project1.jpg" alt="Project 1">
             </div>
 
             <div class="project" style="opacity: 1; max-height: 1000px;">
-                <img src="project1.jpg" alt="Project 1">
                 <div class="project-details">
-                    <h2>Project 1</h2>
-                    <p>Description of Project 1...</p>
-                    <p>Technologies: HTML, CSS, JavaScript</p>
-                    <a href="github-link-1" target="_blank">GitHub</a>
+                    <h2>MyPortfolio</h2>
+                    <h3>HTML | CSS | JavaScript</h3>
+                    <p>My Personal Portfolio web page. (This one)</p>
+                    <a href="https://github.com/PiyumalT/MyPortfolio" target="_blank">
+                        <button class="btn btn-viewCode">GitHub</button>
+                    </a>
                 </div>
+                <img src="project1.jpg" alt="Project 1">
             </div>
 
             <div class="project" style="opacity: 1; max-height: 1000px;">
-                <img src="project1.jpg" alt="Project 1">
                 <div class="project-details">
-                    <h2>Project 1</h2>
-                    <p>Description of Project 1...</p>
-                    <p>Technologies: HTML, CSS, JavaScript</p>
-                    <a href="github-link-1" target="_blank">GitHub</a>
+                    <h2>ecommerce_system </h2>
+                    <h3>Springboot | React | Mysql </h3>
+                    <p>
+                        A full stack ecommerce system with admin and user functionalities.
+                    </p>
+                    <a href="https://github.com/PiyumalT/ecommerce_system" target="_blank">
+                        <button class="btn btn-viewCode">GitHub</button>
+                    </a>
                 </div>
+                <img src="project1.jpg" alt="Project 1">
             </div>
 
             <div class="project" style="opacity: 1; max-height: 1000px;">
-                <img src="project1.jpg" alt="Project 1">
                 <div class="project-details">
-                    <h2>Project 1</h2>
-                    <p>Description of Project 1...</p>
-                    <p>Technologies: HTML, CSS, JavaScript</p>
-                    <a href="github-link-1" target="_blank">GitHub</a>
+                    <h2>Online Shop </h2>
+                    <h3>PHP | HTML | CSS | JavaScript | Mysql</h3>
+                    <p>A Full system for e-commerce shop</p>
+                    <a href="https://github.com/PiyumalT/Online_Shop" target="_blank">
+                        <button class="btn btn-viewCode">GitHub</button>
+                    </a>
                 </div>
+                <img src="project1.jpg" alt="Project 1">
             </div>
 
             <div class="project" style="opacity: 1; max-height: 1000px;">
-                <img src="project1.jpg" alt="Project 1">
                 <div class="project-details">
-                    <h2>Project 1</h2>
-                    <p>Description of Project 1...</p>
-                    <p>Technologies: HTML, CSS, JavaScript</p>
-                    <a href="github-link-1" target="_blank">GitHub</a>
+                    <h2>Pygame Projects</h2>
+                    <h3>Python | Pygame</h3>
+                    <p>Several Mini games for PC</p>
+                    <a href="https://github.com/PiyumalT/Hunting_Game" target="_blank">
+                        <button class="btn btn-viewCode">GitHub</button>
+                    </a>
+                    <a href="https://github.com/PiyumalT/classic_Snake_Game" target="_blank">
+                        <button class="btn btn-viewCode">GitHub</button>
+                    </a>
                 </div>
+                <img src="project1.jpg" alt="Project 1">
             </div>
+
             <!-- Repeat the structure for other projects -->
         </div>
     </section>
@@ -133,32 +149,32 @@
         <div class="skills-container">
             <div class="skill-box">
                 <h3>Front-end Development</h3>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
+                <ul class="Front-end">
+                    <li>HTML</li>
+                    <li>CSS</li>
                     <li>JavaScript</li>
                     <li>React</li>
-                    <!-- Add more front-end skills here -->
                 </ul>
             </div>
             <div class="skill-box">
                 <h3>Back-end Development</h3>
-                <ul>
+                <ul class="Back-end">
+                    <li>PHP</li>
                     <li>Node.js</li>
-                    <li>Express.js</li>
                     <li>Python</li>
-                    <li>Django</li>
-                    <!-- Add more back-end skills here -->
+                    <li>Java</li>
+                    <li>c</li>
                 </ul>
             </div>
             <div class="skill-box">
                 <h3>Database Management</h3>
-                <ul>
+                <ul class="Database">
                     <li>MySQL</li>
                     <li>MongoDB</li>
-                    <li>PostgreSQL</li>
-                    <li>Firebase</li>
-                    <!-- Add more database skills here -->
+                </ul>
+                <h3>Graphic Design</h3>
+                <ul class="Graphic">
+                    <li>Photoshop</li>
                 </ul>
             </div>
         </div>
@@ -172,16 +188,15 @@
         </div>
         <div class="education_details_container">
             <div class="education-detail">
-                <h3>University 1</h3>
-                <p>Degree: Bachelor of Science</p>
-                <p>Field of Study: Computer Science</p>
-                <p>Year: 2020 - 2024</p>
+                <h3>BSc. (Hons) In Software Engineering</h3>
+                <p>Undergraduate at University of Kelaniya , Sri Lanka</p>
+                <!-- <p>Domains: </p> -->
+                <p>2021 - present</p>
             </div>
             <div class="education-detail">
-                <h3>University 2</h3>
-                <p>Degree: Master of Science</p>
-                <p>Field of Study: Software Engineering</p>
-                <p>Year: 2024 - 2026</p>
+                <h3>G.C.E Advance Level Level Examination</h3>
+                <p>Richmond Colleage - Galle</p>
+                <p>(2019) | Z Score - 1.4317</p>
             </div>
         </div>
     </section>
@@ -196,10 +211,14 @@
         <div class="contact-details-container">
             <div class="contact-details-box">
                 <h3>Contact Details</h3>
-                <p>Email: example@example.com</p>
-                <p>Phone: (123) 456-7890</p>
+                <div class="contact_info">
+                    <p>Email: <a href="mailto:tpc@eay.jp">tpc@eay.jp</a></p>
+                    <p>Phone: 0779969532</p>
+                </div>
                 <div class="contact_form_btn">
-                    <button id="openModal" class="social_container">Send Message</button>
+                    <button id="openModal" class="social_container">
+                        <i class="fas fa-envelope"></i> &nbsp;  Send Message
+                    </button>
                 </div>
     
                 <!-- The modal -->
@@ -216,22 +235,22 @@
                 <h3>Find Me</h3>
                 <ul class="social-media-list">
                     <li>
-                        <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+                        <a href="https://www.linkedin.com/in/piyumalt/" target="_blank">
                             <i class="fab fa-linkedin"></i> LinkedIn
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/your-github" target="_blank">
+                        <a href="https://github.com/PiyumalT/" target="_blank">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </li>
                     <li>
-                        <a href="https://medium.com/@your-medium" target="_blank">
+                        <a href="https://piyumalt.medium.com/" target="_blank">
                             <i class="fab fa-medium"></i> Medium
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/your-facebook" target="_blank">
+                        <a href="https://www.facebook.com/tharindu.piyumal.92" target="_blank">
                             <i class="fab fa-facebook"></i> Facebook
                         </a>
                     </li>
@@ -245,9 +264,9 @@
         <div class="footer-content">
             <p>&copy; 2023 <a href="www/github.com/PiyumalT">Tharindu Piyumal</a>. All rights reserved </p>
             <ul class="footer-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
+                <li><a href="#logo">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#technical-skills">Skills</a></li>
                 <li><a href="#contact-me">Contact</a></li>
             </ul>
         </div>

@@ -43,10 +43,11 @@
   }
   .contact_form_btn{
     text-align: center;
+    width: 200px;
   }
   #openModal{
     font-size: 1.1rem;
-    width: auto;
+    width: 180px;
     padding: 6px;
     border-block-color: aqua;
     border-width: 3px;
@@ -54,16 +55,21 @@
   }
   /* Media query for mobile devices */
 @media (max-width: 768px) {
-    .contact_form_btn{
-        text-align: center;
-    }
+  .contact_form_btn{
+    text-align: left;
+    margin-left: 20px;
+  }
+
 }
 
 /* Media query for desktop devices */
 @media (min-width: 769px) {
     .contact_form_btn{
-        text-align: left;
-        margin-left: 20px;
-
+        text-align: center;
+        margin: auto;
     }
+    #openModal{
+        width: 200px;
+    }
+  
 }
