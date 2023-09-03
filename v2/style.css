@@ -145,12 +145,12 @@
     padding: 10px;
     width: 98%;
     text-align: center;
-    background-color:#b5a152;
+    background-color:#d1d0ca;
     border-radius: 5px;
     cursor: pointer;
 }
 .project-details button:hover{
-    background-color: #b99813;
+    background-color: #9a9a9a;
     transition: background-color 0.3s ease;
 }
 
