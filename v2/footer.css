@@ -39,6 +39,7 @@
 .footer {
     padding: 20px 0;
     text-align: center;
+    margin-top: 50px;
 }
 .dark-mode .footer{
     background-color: #1a1a1a;
