@@ -11,6 +11,7 @@
     cursor: pointer;
     border-radius: 40%;
     z-index: 1000;
+    display: none;
   }
   .Send_msg_btn2 {
     position: fixed;

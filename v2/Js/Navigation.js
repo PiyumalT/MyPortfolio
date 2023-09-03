@@ -78,3 +78,27 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// Goto top button hide and show
+// Get the "Go to Top" button
+const goToTopButton = document.getElementById("goToTopButton");
+
+// Function to handle scroll events
+function handleScroll() {
+    if (window.scrollY === 0) {
+        // User is at the top of the page, hide the button
+        goToTopButton.style.display = "none";
+    } else {
+        // User has scrolled down, show the button
+        goToTopButton.style.display = "block";
+    }
+}
+
+// Add click event listener to the "Go to Top" button
+goToTopButton.addEventListener("click", scrollToTop);
+
+// Add scroll event listener to handle scroll events
+window.addEventListener("scroll", handleScroll);
+
+// Initially hide the button
+goToTopButton.style.display = "none";
