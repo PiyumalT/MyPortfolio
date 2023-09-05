@@ -21,3 +21,4 @@ modalOverlay.addEventListener("click", (event) => {
 function openModal() {
     modalOverlay.style.display = "block";
 }
+
