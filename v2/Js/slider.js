@@ -27,16 +27,18 @@ function updateSlider() {
   sliderContainer.style.transform = `translateX(-${currentIndex * boxWidth}px)`;
   boxes.forEach((box, index) => {
     if (index === currentIndex) {
+      box.style.transition = 'width 0.9s ease, height 0.9s ease, margin-top 0.9s ease';
       box.style.width = '300px'; // Width of the selected box
       box.style.height = '300px'; // Height of the selected box
-      box.style.transition = 'margin-top 0.9s ease'; // Add transition property for margin-top
+      // Add transition property for margin-top
       box.style.marginTop = '5px';
 
       // box.style.display = 'block';
     } else {
+      box.style.transition = 'width 0.9s ease, height 0.9s ease, margin-top 0.9s ease';
       box.style.width = '200px'; // Width of other boxes
       box.style.height = '200px'; // Height of other boxes
-      box.style.transition = 'margin-top 0.9s ease'; // Add transition property for margin-top
+       // Add transition property for margin-top
       box.style.marginTop = '50px';
       // box.style.display = 'none';
     }
