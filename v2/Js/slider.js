@@ -23,7 +23,7 @@ boxes.forEach((box, index) => {
 // Update the slider container's transform property to move to the current box
 function updateSlider() {
   const boxWidth = boxes[currentIndex].offsetWidth + 60; // Width of box + gap
-  sliderContainer.style.transition = 'transform 0.9s ease'; // Add transition property
+  sliderContainer.style.transition = 'transform 1.5s ease'; // Add transition property
   sliderContainer.style.transform = `translateX(-${currentIndex * boxWidth}px)`;
   boxes.forEach((box, index) => {
     if (index === currentIndex) {
