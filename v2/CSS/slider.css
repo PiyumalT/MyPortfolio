@@ -1,0 +1,95 @@
+/* Box slider container styles */
+.box-slider {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+    /* width: 100%;
+    display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding-left: calc(50vw - 160px);
+
+  }
+  
+  /* Slider container styles */
+  .slider-container {
+    display: flex;
+    gap: 60px; /* Adjust the gap between boxes */
+    height: 310px;
+  }
+
+
+  
+  /* Individual box styles */
+  .box {
+    flex: 0 0 auto;
+    width: 200px; /* Initial width of each box */
+    height: 200px; /* Initial height of each box */
+    transition: width 0.9s ease, height 0.9s ease;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border: 1.5px solid #1e1e1e77;
+  }
+  
+  /* Style for navigation arrows */
+  .prev-arrow,
+  .next-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+    color: #4db53f;
+    background-color: #7c7c7cbd;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .light-mode .prev-arrow,
+  .light-mode .next-arrow{
+    color: #083902;
+    background-color: #7c7c7cbd;
+  }
+  
+  .prev-arrow {
+    left: 10px; /* Adjust the left arrow position */
+  }
+  
+  .next-arrow {
+    right: 10px; /* Adjust the right arrow position */
+  }
+  
+  /* Style for indicator circles */
+  .indicator-container {
+    display: flex;
+    /* justify-content: center; */
+    margin-top: 50px; /* Adjust the margin */
+    margin-left: 85px;
+  }
+  
+  .indicator-circle {
+    width: 10px; /* Adjust the circle size */
+    height: 10px; /* Adjust the circle size */
+    background-color: #ccc; /* Circle color */
+    border: solid 1px #1e1e1e;
+    border-radius: 50%;
+    margin: 0 5px; /* Adjust the margin between circles */
+    cursor: pointer;
+  }
+  
+  .indicator-circle.active {
+    background-color: #4a4a4a; /* Active circle color */
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .Box-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+  }
