@@ -3,6 +3,8 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     transition: background-color 0.3s, color 0.3s;
+    cursor: url('../img/cursor.png'), auto;
+
 }
 .dark-mode {
     background-color: #111111; /* Set your dark background color */

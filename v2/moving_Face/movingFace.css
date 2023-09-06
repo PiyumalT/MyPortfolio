@@ -1,0 +1,36 @@
+.moving-image-container{
+    width: 100%;
+    text-align: center;
+    margin-bottom: -100px;
+    height: 130px;
+}
+.moving-image-text{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: #b99813;
+    font-family: "comic sans ms";
+
+}
+
+.moving-image {
+    /* position: fixed;  */
+    /* Position the image absolutely on the page */
+    cursor: pointer; /* Change cursor to a pointer when hovering over the image */
+    transition: transform 0.2s ease-in-out; /* Add a transition effect */
+    border-radius: 70%;
+    bottom: 50px;
+    right: 40vw;
+    width: 100px;
+    
+}
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .moving-image {
+        display: none;
+    }
+    .moving-image-container{
+        display: none;
+    }
+}

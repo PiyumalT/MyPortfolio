@@ -81,7 +81,7 @@
 }
 
 /* Media query for mobile devices */
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
     .about {
         flex-direction: column;
         text-align: center;
@@ -110,7 +110,7 @@
     }
 
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1080px) {
     .about {
         flex-direction: row;
         text-align: left;
