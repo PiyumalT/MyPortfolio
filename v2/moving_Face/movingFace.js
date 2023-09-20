@@ -53,7 +53,7 @@ function setMovingImageProperties() {
         movingImage.style.padding = '100px';
         moving_image_active = true;
         if (movingImageText) {
-            movingImageText.innerHTML = "Catch it if you can! 😂";
+            movingImageText.innerHTML = " ";
         } 
     } else if (movingImage && moving_image_active) {
         movingImage.style.position = 'static';
@@ -61,7 +61,7 @@ function setMovingImageProperties() {
         movingImage.style.padding = '0px';
         moving_image_active = false;
         if (movingImageText) {
-            movingImageText.innerHTML = "congratulations! you got it. Try Again.  <br>👇";
+            movingImageText.innerHTML = " ";
         } 
     }
 }
